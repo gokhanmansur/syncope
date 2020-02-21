@@ -1,0 +1,23 @@
+{
+  "syncopeApp": {
+    "songBook": {
+      "home": {
+        "title": "Song Books",
+        "createLabel": "Create a new Song Book",
+        "createOrEditLabel": "Create or edit a Song Book",
+        "notFound": "No Song Books found"
+      },
+      "created": "A new Song Book is created with identifier {{ param }}",
+      "updated": "A Song Book is updated with identifier {{ param }}",
+      "deleted": "A Song Book is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Song Book {{ id }}?"
+      },
+      "detail": {
+        "title": "Song Book"
+      },
+      "name": "Name",
+      "song": "Song"
+    }
+  }
+}
