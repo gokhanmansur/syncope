@@ -1,0 +1,16 @@
+version: '2'
+services:
+  syncope-mongodb:
+    image: mongo:4.0.16
+    ports:
+      - '27017:27017'
+    command: mongos --configdb syncope-mongodb-config
+  syncope-mongodb-node:
+    build:
+      context: .
+      dockerfile: mongodb/MongoDB.Dockerfile
+    command: mongod --replSet rs1 --noprealloc --smallfiles
+  syncope-mongodb-config:
+    image: mongo:4.0.16
+    container_name: syncope-mongodb-config
+    command: mongod --noprealloc --smallfiles --configsvr --dbpath /data/db
