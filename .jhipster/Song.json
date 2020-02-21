@@ -1,0 +1,35 @@
+{
+    "name": "Song",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "lyrics",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "songBook",
+            "otherEntityRelationshipName": "song",
+            "relationshipName": "songBook",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200221183800",
+    "entityTableName": "song",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,30 @@
+{
+    "name": "SongBook",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "song",
+            "otherEntityRelationshipName": "songBook",
+            "relationshipName": "song"
+        }
+    ],
+    "changelogDate": "20200221183700",
+    "entityTableName": "song_book",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}
